@@ -102,12 +102,14 @@ b {
 
 .request {
   padding: 10px;
+  display: inline-block;
 }
 
 .request:hover {
   border: 2px solid #f26526;
   padding: 10px;
   border-radius: 8px;
+
 }
 
 .starboy {
@@ -236,9 +238,10 @@ b {
     list-style-type: none;
   }
 
-  .logo-font {
-    font-family: sans-serif;
-  }
+  /* .logo-image {
+   height: 150%;
+   width: 50px;
+  } */
 }
 
 .third{
@@ -303,3 +306,116 @@ justify-content: space-between;
    border: 0.5px solid wheat; 
   border-radius: 8px; 
 }
+
+
+
+/* Newsletter styles */
+
+.newsletter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  
+
+  
+   
+}
+
+.inputbox{
+
+ 
+    box-shadow: 10px  10px 15px #c7c4c4, -10px -10px 15px #fff;
+
+  
+    border: 1px solid #c7c4c4;
+    border-radius: 10px;
+    color: #1e1c24;
+    font-size: 1.5rem;
+    padding: 1.36rem;
+    width: 100%;
+   
+}
+
+.inputbox input{
+  font-family: poppin, sans-serif;
+  color: #1e1c24;
+  padding:5px 10px;
+  font-size: 15px;
+  
+
+  
+  
+}
+
+.inputbox button{
+  font-size: 20px;
+  padding:10px;
+ border: none;
+  border-radius: 2.5px;
+  background:rgb(167, 167, 246)
+}
+.inputbox button:hover{
+  background: darkgrey
+
+}
+
+h5{
+    color: #1e1c24;
+    flex-basis: auto;
+    font-size: 2rem;
+    font-weight: 10;
+  position: absolute; left: 0; 
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
+
+.subscribe-container{
+ padding-right: 20px ;
+ padding-left: 20px ;
+  padding-bottom: 20px ;
+
+}
+
+.container{
+ margin: 5px;
+ padding: 2rem;
+
+}
+.even-columns{
+  display: grid;
+  gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+   
+}
+
+
+
+.sideimage{
+  max-width: 50%;
+  max-height: 50%;
+  display: flex;
+  flex-direction: column ;
+  
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+
+.paratext{
+padding: 25px;
+  font-size: 20px;
+}
+
+.footer{
+bottom: 0px;
+width: 400px;
+text-align: center;
+display: grid;
+}
+
