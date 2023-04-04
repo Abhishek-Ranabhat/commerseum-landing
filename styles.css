@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: poppin, sans-serif;
+  background-color:beige;
 }
 
 /* HTML tag styles */
@@ -18,7 +19,7 @@ h4 {
     margin-bottom: 0px; */
 
   text-align: center;
-  font-family: poppins, sans-serif;
+
   color: #1e1c24;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -36,7 +37,8 @@ h6 {
 }
 
 b {
-  font-weight: bold;
+  font-weight:lighter;
+  font-size: 18px;
 }
 /* a:hover{
     background-color: black;
@@ -47,17 +49,23 @@ b {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 
 .logo {
   width: 5%;
   height: 5%;
   float: left;
+    position: sticky;
+
+
 }
 .navsize {
-  /* padding: 10px; */
-  /* background-color: azure; */
+   position: sticky;
+    top: 0;
+
 }
+
 .nav-link {
   border: 2px solid #f26f26;
   border-radius: 8px;
@@ -65,6 +73,7 @@ b {
   background-color: #f26526;
   color: #fff;
   font-size: 22px;
+  
 }
 
 .nav-link:hover {
@@ -142,7 +151,7 @@ b {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
-  background-color: whitesmoke;
+  background-color: whe;
   align-content: normal;
   font-family: Poppins, sans-serif;
   grid-gap: 25px;
@@ -157,7 +166,7 @@ b {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: lightgray;
+  /* background-color: lightgray; */
   border: 2px snow;
   border-radius: 8px;
   /* padding-left: 20px;
@@ -173,7 +182,7 @@ b {
   justify-content: center;
   margin-left: auto !important;
   margin-right: auto !important;
-  background-color: lightgray;
+  /* background-color: lightgray; */
   border: 2px snow;
   border-radius: 8px;
   padding: 15px;
@@ -184,7 +193,7 @@ b {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: lightgray;
+  /* background-color: lightgray; */
   border: 2px snow;
   border-radius: 8px;
   padding: 15px;
@@ -194,8 +203,8 @@ b {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: lightgray;
-  border: 2px snow;
+  /* background-color: burlywood; */
+  border: 2px whitesmoke;
   border-radius: 8px;
   margin-left: auto !important;
   margin-right: auto !important;
@@ -403,7 +412,8 @@ h5{
 
 ul[role="list"],
 ol[role="list"] {
-  list-style: none;
+  list-style:none;
+  font-size: 5px;
 }
 
 
@@ -419,3 +429,35 @@ text-align: center;
 display: grid;
 }
 
+.footer-container{
+
+
+ 
+
+}
+.even-footer{
+
+  display: flex;
+    align-items: center;
+    justify-content: center;
+
+  
+
+}
+@media screen and (max-width: 768px) 
+     {
+      .navsize{
+        margin-left : 1em;
+        margin-right : 1em;
+    }
+  }
+
+
+  li{
+    display: list-item;
+   
+  }
+  
+  .logo-social{
+    padding: 50px;
+  }
