@@ -330,7 +330,7 @@ b {
 
   border: 1px solid #c7c4c4;
   border-radius: 10px;
-  overflow: hiddenx;
+  overflow: hidden;
   /* border-radius: 10px;
   color: #1e1c24;
   font-size: 1.5rem;
@@ -339,23 +339,27 @@ b {
 }
 
 .inputbox input {
-  font-family: poppin, sans-serif;
   color: #1e1c24;
-  padding:5px 10px;
+  padding: 10px;
   font-size: 15px;
-  
+  border: none;
+  outline: none;
 }
 
 .inputbox button {
   font-size: 20px;
-  padding:10px;
- border: none;
+  padding: 10px;
+  border: none;
   border-radius: 2.5px;
-  background:rgb(167, 167, 246)
+    background: #f26526;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    color: #fff;
 }
 .inputbox button:hover {
   background: white;
-  
+  border: 2px solid #f26526;
+  color: #000;
 }
 
 h5 {
@@ -429,6 +433,24 @@ ol[role="list"] {
   /* justify-content: center; */
 }
 
+.subscribe {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  max-width: 1100px;
+  padding: 20px 20px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  gap: 20px;
+}
+
+.subscibetext {
+  font-size: 2rem;
+}
+
 .footer-a {
   font-size: 18px;
 }
@@ -448,7 +470,9 @@ ol[role="list"] {
   .even-footer{
   grid-template-columns: repeat(2, 1fr);
   }
- 
+  .subscribe{
+    flex-direction: column;
+  }
     .navbar {
 flex-direction: column;
     }
@@ -466,7 +490,9 @@ flex-direction: column;
     }
 }
 @media screen and (max-width: 524px) {
-  
+    .subscribe {
+        flex-direction: column;
+      }
   .navsize {
     margin-left: 1em;
     margin-right: 1em;
